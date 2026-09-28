@@ -1,4 +1,5 @@
 const API = import.meta.env.VITE_API;
+import axios from "axios";
 
 /** Fetches an array of activities from the API. */
 export async function getActivities() {
@@ -34,6 +35,11 @@ export async function createActivity(token, activity) {
     const result = await response.json();
     throw Error(result.message);
   }
+}
+
+export async function getActivity(id) {
+  const response = await axios.get(API + "/activities/" + id);
+  return response.data;
 }
 
 /**
