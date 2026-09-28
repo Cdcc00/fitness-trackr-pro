@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useAuth } from "./AuthContext";
-import { usePage } from "../layout/PageContext";
 
 /** A form that allows users to register for a new account */
 export default function Register() {

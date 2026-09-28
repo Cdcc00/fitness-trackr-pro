@@ -42,7 +42,6 @@
 21. The `useQuery` hook returns three state variables: the data, whether the request is loading,
     and the error if there was one.
 22. ***
-
     1. `useMutation` additionally takes a `method`. It also takes `tagsToInvalidate`
        instead of `tag`.
     2. The `request` involves setting the `method` and sending a `body`, but is otherwise
