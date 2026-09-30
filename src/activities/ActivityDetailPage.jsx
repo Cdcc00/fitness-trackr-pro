@@ -35,6 +35,7 @@ export default function ActivityDetailPage() {
   return (
     <>
       <h1>{activity.name}</h1>
+      <p>Created by {activity.creatorName}</p>
       <p>{activity.description}</p>
       {token && <button onClick={tryDelete}>Delete</button>}
       {error && <p role="alert">{error}</p>}
